@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+form {
+	position: absolute;
+	top: 2em;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 300px;
+	display: grid;
+	gap: 0.6rem;
+}
+
+.form-gp {
+	display: grid;
+	gap: 0.5rem;
+}
+
+.form-gp input {
+	padding: 4px;
+}
+
+.submit-btn {
+	padding: 4px;
+	cursor: pointer;
+}
+
+.message {
+	padding: 1rem;
+}
