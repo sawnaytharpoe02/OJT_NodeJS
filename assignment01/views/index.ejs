@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+</head>
+<body>
+  <h2>Age Calculator</h2>
+  <form action="/calculate" method="POST">
+    <p>Choose the date <input type="date" name="date" class="dateInput"></p>
+    <button type="submit">Calculate date</button>
+  </form>
+  <% if (typeof data !== 'undefined') { %>
+    <p class="result"><%= data.ageString %></p>
+  <% } %>
+</body>
+</html>
