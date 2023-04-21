@@ -1,0 +1,15 @@
+html
+  head
+    title Login
+  body
+    h1 Login
+    if message
+      p= message
+    form(action='/login', method='POST')
+      label(for='id') User ID:
+      input(type='text', name='id')
+      br
+      label(for='password') Password:
+      input(type='password', name='password')
+      br
+      input(type='submit', value='Login')

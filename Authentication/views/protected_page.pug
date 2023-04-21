@@ -1,0 +1,8 @@
+html
+  head
+    title Protected Page
+  body
+    h1 Welcome #{id}!
+    p You have successfully logged in.
+    form(action='/logout', method='GET')
+      input(type='submit', value='Logout')

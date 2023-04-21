@@ -1,0 +1,15 @@
+html
+  head
+    title Signup
+  body
+    h1 Signup
+    if message
+      p= message
+    form(action='/signup', method='POST')
+      label(for='id') User ID:
+      input(type='text', name='id')
+      br
+      label(for='password') Password:
+      input(type='password', name='password')
+      br
+      input(type='submit', value='Signup')
