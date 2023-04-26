@@ -1,0 +1,26 @@
+{
+	"name": "assignment07",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.ts",
+	"scripts": {
+		"start": "nodemon dist/app.js",
+		"serve": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2",
+		"mongoose": "^7.0.5",
+		"typescript": "^5.0.4"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.17",
+		"@types/mongoose": "^5.11.97",
+		"@types/node": "^18.16.1",
+		"concurrently": "^8.0.1",
+		"dotenv": "^16.0.3",
+		"nodemon": "^2.0.22"
+	}
+}
