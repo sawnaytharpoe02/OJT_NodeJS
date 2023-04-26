@@ -13,7 +13,7 @@ This is a small movie project API built using Node.js, Express.js and MongoDB. I
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/movie-api.git movie-api
+   git clone https://github.com/sawnaytharpoe02/OJT_NodeJS/tree/master/assignment05 movie-api
    ```
 2. Navigate to the project directory:
    ```
