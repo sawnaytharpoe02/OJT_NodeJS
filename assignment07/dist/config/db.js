@@ -13,14 +13,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
-const url = process.env.DB_URI;
+const logger_1 = require("../logger");
 const connection = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        yield mongoose_1.default.connect(url);
-        console.log('connected to the database');
+        if (!process.env.DB_URI) {
+            throw new Error('DB_URI is not defined in the environment variables');
+        }
+        yield mongoose_1.default.connect(process.env.DB_URI);
+        logger_1.logger.info('connected to the database');
     }
-    catch (error) {
-        console.log(error, 'could not connect to database');
+    catch (err) {
+        logger_1.logger.error(err, 'could not connect to database');
     }
 });
 exports.default = connection;
