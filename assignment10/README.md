@@ -16,7 +16,7 @@ This repository contains the source code for a tutorial on how to implement pass
 To get started with this project, you can either clone the repository or download the source code as a zip file.
 
 ```bash
-git clone https://github.com/cyberwolves/how-to-implement-password-reset-via-email-in-node-js.git
+git clone https://github.com/sawnaytharpoe02/OJT_NodeJS/tree/master/assignment10
 ```
 
 ## Installation
